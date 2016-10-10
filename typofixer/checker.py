@@ -36,7 +36,8 @@ class Checker(object):
     BLACK_LIST = set(x.strip() for x in open(os.path.join(DATA_DIR_PATH, "banned_list_twt.txt")))
     #PWMODEL = PWModel(fname='rockyou1M.json.gz')
     # PWMODEL = HistModel(pwfilename='rockyou')
-    PWMODEL = NGramPw(pwfilename='%s/passwords/rockyou-withcount.txt.bz2' % home, n=4)
+    #PWMODEL = NGramPw(pwfilename='%s/passwords/rockyou-withcount.txt.bz2' % home, n=4)
+    PWMODEL = NGramPw(pwfilename='/media/lennon/DATA/Dropbox/Dropbox/typos/leaked/rockyou-withcount.txt.bz2', n=4)
 
 
     def __init__(self, _transform_list, policy_num=1, N=10, **kwargs):

@@ -47,19 +47,17 @@ Python 2.7.6 (default, Jun 22 2015, 17:58:13)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from typofixer.checker import BUILT_IN_CHECKERS
 
->>> chk = BUILT_IN_CHECKERS['ChkAllTop3']
-
->>> chk = BUILT_IN_CHECKERS['ChkAllTop3'] 
+>>> chk = BUILT_IN_CHECKERS['ChkAOp_Top5']
 
 >>> chk.check('password')
 set(['passwor', 'Password', 'PASSWORD', 'password'])
 
->>> chk_bl = BUILT_IN_CHECKERS['ChkBlTop3']
+>>> chk_bl = BUILT_IN_CHECKERS['ChkBl_Top3']
 
 >>> chk_bl.check('password')
 set(['passwor', 'password'])
 
->>> >>> chk_all = BUILT_IN_CHECKERS['ChkAllTop5']
+>>> >>> chk_all = BUILT_IN_CHECKERS['ChkAll_Top5']
 
 >>> chk_all.check('password1')
 set(['assword1', 'PASSWORD1', 'Password1', 'password!', 'password', 'password1'])
